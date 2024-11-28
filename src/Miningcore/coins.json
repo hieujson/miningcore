@@ -36,6 +36,61 @@
         "explorerTxLink": "https://explorer.fiveg.cash/tx/{0}",
         "explorerAccountLink": "https://explorer.fiveg.cash/address/{0}"
     },
+    {
+        "bbqcoin": {
+            "name": "BBQCoin",
+            "symbol": "BBQ",
+            "family": "bitcoin",
+            "website": "",
+            "coinbaseHasher": {
+                "hash": "sha256d"
+            },
+            "headerHasher": { 
+                "hash": "scrypt",
+                "args": [
+                    1024,
+                    1
+                ]
+            },
+            "blockHasher": {
+                "hash": "reverse",
+                "args": [
+                    {
+                        "hash": "sha256d"
+                    }
+                ]
+            },
+            "parameters": {
+                "networkType": "mainnet",
+                "magic": "0xfde4d942",
+                "port": 19323,
+                "pubKeyAddressVersion": 85,
+                "scriptAddressVersion": 6,
+                "secretKeyVersion": 176,
+                "coinbaseMinConfimations": 120,
+                "maxBlockTime": 60,
+                "blockTime": 60,
+                "targetTimespan": 3600,
+                "powTargetSpacing": 60, 
+                "txVersion": 1,
+                "powLimit": "0x00000fffff000000000000000000000000000000000000000000000000000000",
+                "genesisBlockHash": "0x32e21aeb3780622102419fbda3a5f9d6c8d81d52e3d1b6cdad8a8e92f50415ec",
+                "genesisCoinbaseOutputScript": "040184710fa689ad5023690c80f3a49c8f13f8d45b8c857fbcbc8bc4a8e4d3eb4b10f4d4604fa08dce601aaf0f470216fe1b51850b4acf21b179c45070ac7b03a9",
+                "genesisCoinbaseTx": "13/07/2012 BBQCoin started.",
+                "genesisBlockTime": 1317972665,
+                "genesisBlockNonce": 2085733839, 
+                "genesisBlockVersion": 1,
+                "genesisBlockBits": "1e0ffff0",
+                "powTargetTimespan": 3600
+            },
+            "shareMultiplier": 65536,
+            "hasFounderFee": false,
+            "hasMasterNodes": false,
+            "explorerBlockLink": "http://explorer.bbqcoin.com/block/$height$", 
+            "explorerTxLink": "http://explorer.bbqcoin.com/tx/{0}",
+            "explorerAccountLink": "http://explorer.bbqcoin.com/address/{0}"
+        }
+    },
     "auroracoin-sha256": {
         "name": "Auroracoin Sha256",
         "canonicalName": "Auroracoin",
